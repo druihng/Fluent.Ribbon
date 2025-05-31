@@ -6,19 +6,27 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                
+                
+                
                 <ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Generic.xaml" />
+
+                <!--<ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/Theme.xaml" />-->
 
                 <!--<ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Themes/Light.Green.xaml" />-->
 
                 <!--<ResourceDictionary Source="pack://application:,,,/Fluent;component/Themes/Themes/Dark.Green.xaml" />-->
             </ResourceDictionary.MergedDictionaries>
 
-            <Style x:Key="{x:Type CheckBox}"
+            <!--<Style x:Key="{x:Type CheckBox}"
                    TargetType="CheckBox">
                 <Setter Property="Foreground" Value="{DynamicResource Fluent.Ribbon.Brushes.Black}" />
                 <Setter Property="VerticalAlignment" Value="Center" />
                 <Setter Property="VerticalContentAlignment" Value="Center" />
-            </Style>
+            </Style>-->
+
+            <Style TargetType="CheckBox" BasedOn="{StaticResource CheckBoxBaseStyle}"/>
 
             <Style TargetType="{x:Type ScrollViewer}"
                    BasedOn="{StaticResource Fluent.Ribbon.Styles.ScrollViewer}" />

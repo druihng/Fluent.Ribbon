@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <PackageReference Include="ControlzEx" />
+    <PackageReference Include="HandyControl" />
     <PackageReference Include="System.Memory" Condition="'$(IsBuildingForLegacyFramework)' == 'true'" />
 
     <PackageReference Include="XAMLTools.MSBuild" PrivateAssets="all" IncludeAssets="build" />
@@ -62,10 +63,10 @@
   </ItemGroup>
   
   <ItemGroup>
-    <XAMLCombineItems Include="$(FilesForXamlCombine)">
+    <!--<XAMLCombineItems Include="$(FilesForXamlCombine)">
       <TargetFile>Themes\Styles.xaml</TargetFile>
       <Visible>False</Visible>
-    </XAMLCombineItems>
+    </XAMLCombineItems>-->
 
     <XAMLColorSchemeGeneratorItems Include="Themes\Themes\Theme.Template.xaml">
       <ParametersFile>Themes\Themes\GeneratorParameters.json</ParametersFile>
